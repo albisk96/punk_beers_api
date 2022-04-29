@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card-zoom {
+  @apply relative flex cursor-pointer p-6 items-center sm:m-3 justify-center overflow-hidden shadow-xl sm:w-1/2 w-full h-96;
+}
+.card-zoom-image {
+  @apply absolute w-full h-full transition-all duration-700 ease-in-out transform bg-center bg-cover;
+}
+
+.card-zoom:hover .card-zoom-image {
+  @apply scale-150;
+}
+
+.card-content {
+  @apply leading-relaxed w-32 px-3 h-24 flex flex-col items-center justify-center border border-black bg-white opacity-70 absolute;
+}
+
+.my-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6;
+}
+
+.my-button {
+  @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
+}
+
+.title {
+  @apply font-sans text-5xl font-medium text-center;
+}
+
+.accordion-item {
+  @apply bg-white border border-gray-200;
+}
+
+.accordion-button {
+  @apply relative flex items-center w-full py-4 px-5 text-base text-gray-800 text-left bg-white border-0 rounded-none transition focus:outline-none;
+}
+
+.accordion-collapse {
+  @apply overflow-auto duration-700 ease-in-out;
+}
+
+.form-select {
+  @apply appearance-none block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding bg-no-repeat border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none;
+}
+
+.tag {
+  @apply inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2;
+}
