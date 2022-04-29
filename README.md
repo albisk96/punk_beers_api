@@ -1,4 +1,2 @@
 # punk_beers_api
-Stepst to start the project:
-npm install
-npm start
+Steps to start the project: 1. npm install 2. npm start
